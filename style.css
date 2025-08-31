@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#facebook-button {
+  background: rgb(49, 49, 165);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* spazio tra icona e testo */
+}
+
+#facebook-button:hover {
+  background: rgb(81, 192, 228);
+}
+
+.navbar {
+  padding: 1vh;
+  height: 10vh; 
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.navbar img {
+  height: 100%;
+}
+
+.image {
+  background-color: white;
+  margin-top: 2vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.arrow-btn{
+  margin: 0px 4vw; 
+  text-align: center;
+  background-color: white; 
+  border: 0px; 
+  padding: 0px 2vw;
+}
+
+.arrow-btn:hover{
+  background-color: rgb(250, 246, 246);
+}
+
+#mainImage {
+  transition: opacity 0.5s ease; /* animazione su opacità */
+  opacity: 1;
+}
+
+#mainImage.fade-out {
+  opacity: 0;
+}
+
+.social-btn {
+  width: 3vw;
+  height: 5vh;
+  border: 1px solid black;
+  border-radius: 1rem;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+/* Dimensioni diverse per schermi piccoli */
+@media (max-width: 600px) {
+  .social-btn {
+    width: 5vw;
+    height: 4vh;
+  }
+}
+
+.social-btn:hover {
+  transform: scale(1.2);
+}
