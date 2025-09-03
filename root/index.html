@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Castello di Alice</title>
-    <!-- Collegamento al CSS -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
   </head>
-  <body style="margin: 0px">
+
+
+  <body>
     <div id="logo" class="navbar">
       <div style="margin-left: 2vw">
         <button>regolamento</button>
@@ -19,45 +22,79 @@
         <button>tour</button>
       </div>
 
-      <img src="image2.png" alt="logo" />
+      <img src="image2.png" alt="logo" id="logo-pic" />
+
       <div style="margin-right: 2vw">
-        <button class="social-btn"><i class="fa-brands fa-whatsapp"></i></button>
-        <button class="social-btn"><i class="fa-brands fa-facebook"></i></button>
+        <button class="social-btn">
+          <i class="fa-brands fa-whatsapp"></i>
+        </button>
+        <button class="social-btn">
+          <i class="fa-brands fa-facebook"></i>
+        </button>
         <button class="social-btn"><i class="fa-brands fa-tiktok"></i></button>
-        <button class="social-btn"><i class="fa-brands fa-instagram"></i></button>
+        <button class="social-btn">
+          <i class="fa-brands fa-instagram"></i>
+        </button>
       </div>
     </div>
 
+
     <div
       style="
-        margin-top: 2vh;
+        background-color: white;
+        margin-top: 0vh;
         display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
+        align-items: center;
+        padding: 10vh;
       "
     >
-      <img src="image.png" alt="" style="width: 30%; height: 30%" />
+      <img id="castello_di_alice_logo" src="image.png" alt="" />
       <p
         style="
-          width: 50%;
-          color: black;
-          height: 20vh;
-          overflow: hidden;
-          overflow-y: auto;
-          font-family: Verdana;
+          width: 70%;
+          margin-right: 10%;
+          padding: 3vw;
+          font-family: 'Fredoka', Verdana, sans-serif;
+          font-size: 1.1rem;
+          font-weight: 500;
+          line-height: 1.7;
+          text-align: justify;
+          color: #222;
+          background: #fff8e7;
+          border-radius: 20px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         "
       >
-        Al Castello di Alice a Ponte a Moriano (Lucca) potete organizzare
-        compleanni e feste per i vostri bambini. Il parco divertimenti Il
-        Castello di Alice mette a disposizione tre salette: Castello, Arcobaleno
-        e Bosco Incantato. Le salette hanno pareti dipinte a mano con i
-        personaggi dei vostri cartoni animati preferiti, sono molto luminose ed
-        attrezzate con tutti i comfort. Inoltre è possibile scegliere tra i
-        nostri menù che includono anche il servizio di apparecchiatura e inviti
-        personalizzati. Per assicurarsi il divertimento dei bambini, il parco
-        divertimenti organizza anche l'animazione con dei veri professionisti:
-        Il Mago ed il Truccabimbo, spettacoli di magia e artisti di strada.
+        🎉 <strong style="color: #e63946">Al Castello di Alice</strong> a Ponte
+        a Moriano (Lucca) potete organizzare
+        <span style="color: #ff7f11; font-weight: 700">compleanni</span> e
+        <span style="color: #06d6a0; font-weight: 700"
+          >feste indimenticabili</span
+        >
+        per i vostri bambini!
+
+        <br /><br />
+        Il parco divertimenti mette a disposizione
+        <span style="color: #d62828; font-weight: 700">tre salette magiche</span
+        >: <span style="color: #f77f00; font-weight: 700">Castello</span>,
+        <span style="color: #118ab2; font-weight: 700">Arcobaleno</span> e
+        <span style="color: #06d6a0; font-weight: 700">Bosco Incantato</span>.
+
+        <br /><br />
+        Le sale sono decorate a mano con i personaggi più amati, luminose e
+        dotate di tutti i comfort. Offriamo
+        <span style="color: #7209b7; font-weight: 700">menù su misura</span>,
+        servizio di apparecchiatura e inviti personalizzati.
+
+        <br /><br />
+        Per garantire il divertimento di tutti i bambini, organizziamo
+        <span style="color: #e63946; font-weight: 700"
+          >animazione professionale</span
+        >
+        con <span style="color: #f4a261; font-weight: 700">il Mago</span>,
+        <span style="color: #2a9d8f; font-weight: 700">il Truccabimbo</span>,
+        spettacoli di magia e artisti di strada!
       </p>
     </div>
 
@@ -77,9 +114,9 @@
     </div>
 
     <div style="width: 100%; display: block; margin-left: 2vw; margin-top: 4vh">
-      <h1 style="color: pink;">Info e Contatti</h1>
-      <div style="display: flex; justify-content: space-evenly; width: 100%;">
-        <div style="width: 100%;">
+      <h1 style="color: pink">Info e Contatti</h1>
+      <div style="display: flex; justify-content: space-evenly; width: 100%">
+        <div style="width: 100%">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2874.668463166594!2d10.532709975795125!3d43.90413283616568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d57f552866f7eb%3A0xb645240e01a90adc!2sParco%20Divertimenti%20Il%20Castello%20di%20Alice!5e0!3m2!1sit!2sit!4v1756553997767!5m2!1sit!2sit"
             width="100%"
@@ -90,7 +127,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div style="width: 100%; height: 50%;">
+        <div style="width: 100%; height: 50%">
           <blockquote
             class="tiktok-embed"
             cite="https://www.tiktok.com/@ilcastellodialice/video/7512062151226346774"
@@ -144,8 +181,9 @@
       </div>
     </div>
 
-    <div style="width: 100%; height: 100px; background-color: pink; margin: 0px;">
-    </div>
+    <div
+      style="width: 100%; height: 100px; background-color: pink; margin: 0px"
+    ></div>
     <script>
       // Lista delle immagini disponibili
       const images = ["castelloIMG.png", "unnamed (2).jpg", "unnamed.jpg"];
@@ -176,6 +214,10 @@
         currentIndex = (currentIndex - 1 + images.length) % images.length; // evita numeri negativi
         updateImage();
       });
+
+      const img = document.getElementById("logo-pic");
+      img.addEventListener("mouseenter", () => (img.src = "./kiss_castello_alice.png"));
+      img.addEventListener("mouseleave", () => (img.src = "./image2.png"));
     </script>
   </body>
 </html>

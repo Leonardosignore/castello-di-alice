@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: pink; /* o il colore che vuoi */
+  height: 100%;
+  background-size: contain;
+}
+
+#castello_di_alice_logo {
+  width: 30%;
+  height: 30%;
+  margin-left: 15%;
+  transition: transform 0.2s;
+}
+
+#castello_di_alice_logo:hover {
+  transform: scale(1.2);
+}
+
 #facebook-button {
   background: rgb(49, 49, 165);
   color: white;
@@ -23,12 +43,13 @@
 
 .navbar {
   padding: 1vh;
-  height: 10vh; 
+  height: 15vh;
   background-color: pink;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
+  border-bottom: 2px solid black;
 }
 
 .navbar img {
@@ -44,16 +65,15 @@
   justify-content: space-between;
 }
 
-
-.arrow-btn{
-  margin: 0px 4vw; 
+.arrow-btn {
+  margin: 0px 4vw;
   text-align: center;
-  background-color: white; 
-  border: 0px; 
+  background-color: white;
+  border: 0px;
   padding: 0px 2vw;
 }
 
-.arrow-btn:hover{
+.arrow-btn:hover {
   background-color: rgb(250, 246, 246);
 }
 
@@ -73,6 +93,8 @@
   border-radius: 1rem;
   transition: transform 0.2s;
   display: inline-block;
+  background-color: white;
+  padding: 1%;
 }
 
 /* Dimensioni diverse per schermi piccoli */
@@ -85,4 +107,23 @@
 
 .social-btn:hover {
   transform: scale(1.2);
+  background-color: rgb(230, 202, 207);
+}
+
+.evidenziato {
+  font-weight: 700;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+.text-orange {
+  color: orange;
+}
+.text-blue {
+  color: blue;
 }
