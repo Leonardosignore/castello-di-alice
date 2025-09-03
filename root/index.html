@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,16 +11,16 @@
     />
   </head>
 
-
   <body>
-    <div id="logo" class="navbar">
+    <!-- NAVBAR-->
+    <div class="navbar">
       <div style="margin-left: 2vw">
         <button>regolamento</button>
         <button>news</button>
         <button>tour</button>
       </div>
 
-      <img src="image2.png" alt="logo" id="logo-pic" />
+      <img id="logo-pic" src="image2.png" alt="logo" style="padding: 1rem" />
 
       <div style="margin-right: 2vw">
         <button class="social-btn">
@@ -38,64 +36,104 @@
       </div>
     </div>
 
+    <!-- FINE NAVBAR -->
+
+    <!-- INTRO -->
+    <div class="intro">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+        "
+      >
+        <img src="./image.png" alt="" id="castello_di_alice_logo" />
+      </div>
+      <div
+        style="
+          width: 100%;
+          background-color: white;
+          align-items: center;
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 10vh;
+        "
+      >
+        <img src="./dragon_pink_pic.png" alt="" width="30%" id="dragon-pink" />
+        <p
+          style="
+            width: 70%;
+            margin-right: 10%;
+            padding: 3vw;
+            font-family: 'Fredoka', Verdana, sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.7;
+            text-align: justify;
+            color: #222;
+            background-image: radial-gradient(#ffff,#ffd8b7);
+            border-radius: 20px;
+            box-shadow: 4px 4px 5px #ffd8b7;
+          "
+          class="fade-in"
+        >
+          🎉 <strong style="color: #e63946">Al Castello di Alice</strong> a
+          Ponte a Moriano (Lucca) potete organizzare
+          <span style="color: #ff7f11; font-weight: 700">compleanni</span> e
+          <span style="color: #06d6a0; font-weight: 700"
+            >feste indimenticabili</span
+          >
+          per i vostri bambini!
+
+          <br /><br />
+          Il parco divertimenti mette a disposizione
+          <span style="color: #d62828; font-weight: 700"
+            >tre salette magiche</span
+          >: <span style="color: #f77f00; font-weight: 700">Castello</span>,
+          <span style="color: #118ab2; font-weight: 700">Arcobaleno</span> e
+          <span style="color: #06d6a0; font-weight: 700">Bosco Incantato</span>.
+
+          <br /><br />
+          Le sale sono decorate a mano con i personaggi più amati, luminose e
+          dotate di tutti i comfort. Offriamo
+          <span style="color: #7209b7; font-weight: 700">menù su misura</span>,
+          servizio di apparecchiatura e inviti personalizzati.
+
+          <br /><br />
+          Per garantire il divertimento di tutti i bambini, organizziamo
+          <span style="color: #e63946; font-weight: 700"
+            >animazione professionale</span
+          >
+          con <span style="color: #f4a261; font-weight: 700">il Mago</span>,
+          <span style="color: #2a9d8f; font-weight: 700">il Truccabimbo</span>,
+          spettacoli di magia e artisti di strada! <br />
+          <br />
+          ORARIO DI APERTURA Per ingressi liberi: dal Martedì alla Domenica
+          15:30 - 19:30 Per feste e compleanni in esclusiva: Lunedì 15:30 -
+          19:30, Sabato e Domenica 10:00 - 14:00, Venerdì e Sabato 20:30 - 24:00
+        </p>
+      </div>
+    </div>
 
     <div
       style="
-        background-color: white;
-        margin-top: 0vh;
+        padding-top: 15vh;
         display: flex;
-        text-align: center;
-        align-items: center;
-        padding: 10vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: #edffcc;
+        background-image: linear-gradient(
+          to bottom,
+          #ffffff 0%,
+          /* bianco */ #fffde7 40%,
+          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */
+        );
+        height: 25vh;
       "
     >
-      <img id="castello_di_alice_logo" src="image.png" alt="" />
-      <p
-        style="
-          width: 70%;
-          margin-right: 10%;
-          padding: 3vw;
-          font-family: 'Fredoka', Verdana, sans-serif;
-          font-size: 1.1rem;
-          font-weight: 500;
-          line-height: 1.7;
-          text-align: justify;
-          color: #222;
-          background: #fff8e7;
-          border-radius: 20px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        "
-      >
-        🎉 <strong style="color: #e63946">Al Castello di Alice</strong> a Ponte
-        a Moriano (Lucca) potete organizzare
-        <span style="color: #ff7f11; font-weight: 700">compleanni</span> e
-        <span style="color: #06d6a0; font-weight: 700"
-          >feste indimenticabili</span
-        >
-        per i vostri bambini!
-
-        <br /><br />
-        Il parco divertimenti mette a disposizione
-        <span style="color: #d62828; font-weight: 700">tre salette magiche</span
-        >: <span style="color: #f77f00; font-weight: 700">Castello</span>,
-        <span style="color: #118ab2; font-weight: 700">Arcobaleno</span> e
-        <span style="color: #06d6a0; font-weight: 700">Bosco Incantato</span>.
-
-        <br /><br />
-        Le sale sono decorate a mano con i personaggi più amati, luminose e
-        dotate di tutti i comfort. Offriamo
-        <span style="color: #7209b7; font-weight: 700">menù su misura</span>,
-        servizio di apparecchiatura e inviti personalizzati.
-
-        <br /><br />
-        Per garantire il divertimento di tutti i bambini, organizziamo
-        <span style="color: #e63946; font-weight: 700"
-          >animazione professionale</span
-        >
-        con <span style="color: #f4a261; font-weight: 700">il Mago</span>,
-        <span style="color: #2a9d8f; font-weight: 700">il Truccabimbo</span>,
-        spettacoli di magia e artisti di strada!
-      </p>
     </div>
 
     <div class="image">
@@ -106,83 +144,31 @@
         id="mainImage"
         src="castelloIMG.png"
         alt="Castello di Alice"
-        width="70%"
+        width="90%"
       />
       <button id="nextBtn" class="arrow-btn">
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     </div>
 
-    <div style="width: 100%; display: block; margin-left: 2vw; margin-top: 4vh">
-      <h1 style="color: pink">Info e Contatti</h1>
-      <div style="display: flex; justify-content: space-evenly; width: 100%">
-        <div style="width: 100%">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2874.668463166594!2d10.532709975795125!3d43.90413283616568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d57f552866f7eb%3A0xb645240e01a90adc!2sParco%20Divertimenti%20Il%20Castello%20di%20Alice!5e0!3m2!1sit!2sit!4v1756553997767!5m2!1sit!2sit"
-            width="100%"
-            height="90%"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div style="width: 100%; height: 50%">
-          <blockquote
-            class="tiktok-embed"
-            cite="https://www.tiktok.com/@ilcastellodialice/video/7512062151226346774"
-            data-video-id="7512062151226346774"
-            style="max-width: 605px; min-width: 325px"
-          >
-            <section>
-              <a
-                target="_blank"
-                title="@ilcastellodialice"
-                href="https://www.tiktok.com/@ilcastellodialice?refer=embed"
-                >@ilcastellodialice</a
-              >
-              🎂 Al compleanno di tuo figlio, ci pensiamo noi!! 🏰 Parco giochi
-              il Castello di Alice 📞 348 434 7354 📍 Via Nazionale, 180, Ponte
-              a Moriano ⏰ MAR-DOM 16:00-19:30 🎬 @afinet.it
-              <a
-                title="parcogiochi"
-                target="_blank"
-                href="https://www.tiktok.com/tag/parcogiochi?refer=embed"
-                >#parcogiochi</a
-              >
-              <a
-                title="parcodivertimenti"
-                target="_blank"
-                href="https://www.tiktok.com/tag/parcodivertimenti?refer=embed"
-                >#parcodivertimenti</a
-              >
-              <a
-                title="babyparty"
-                target="_blank"
-                href="https://www.tiktok.com/tag/babyparty?refer=embed"
-                >#babyparty</a
-              >
-              <a
-                title="gonfiabili"
-                target="_blank"
-                href="https://www.tiktok.com/tag/gonfiabili?refer=embed"
-                >#gonfiabili</a
-              >
-              <a
-                target="_blank"
-                title="♬ suono originale - il castello di Alice"
-                href="https://www.tiktok.com/music/suono-originale-7512062165067729666?refer=embed"
-                >♬ suono originale - il castello di Alice</a
-              >
-            </section>
-          </blockquote>
-          <script async src="https://www.tiktok.com/embed.js"></script>
-        </div>
-      </div>
+    <div style="background-image: linear-gradient(to top,
+          #ffffff 0%,
+          /* bianco */ #fffde7 40%,
+          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */);height: 10vh;">
+    </div>
+
+    <div class="info-finali">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2874.668463166594!2d10.532709975795125!3d43.90413283616568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d57f552866f7eb%3A0xb645240e01a90adc!2sParco%20Divertimenti%20Il%20Castello%20di%20Alice!5e0!3m2!1sit!2sit!4v1756553997767!5m2!1sit!2sit"
+        style="border: 0; object-fit: contain; height: 100%; width: 60vw"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
     <div
-      style="width: 100%; height: 100px; background-color: pink; margin: 0px"
+      style="width: 100%; height: 100px; background-color: #009ee9; margin: 0px"
     ></div>
     <script>
       // Lista delle immagini disponibili
@@ -216,7 +202,10 @@
       });
 
       const img = document.getElementById("logo-pic");
-      img.addEventListener("mouseenter", () => (img.src = "./kiss_castello_alice.png"));
+      img.addEventListener(
+        "mouseenter",
+        () => (img.src = "./kiss_castello_alice.png")
+      );
       img.addEventListener("mouseleave", () => (img.src = "./image2.png"));
     </script>
   </body>
