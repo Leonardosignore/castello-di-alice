@@ -195,14 +195,6 @@ p {
   height: 100%;
 }
 
-@media (max-width: 600px) {
-  p {
-    max-height: 200px;
-    overflow: scroll;
-    position: relative;
-  }
-}
-
 .map-container {
   position: relative;
   width: 100%; /* si adatta alla larghezza del contenitore */
