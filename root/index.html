@@ -14,29 +14,31 @@
   <body>
     <!-- NAVBAR-->
     <div class="navbar">
-      <div style="margin-left: 2vw">
-        <button>regolamento</button>
-        <button>news</button>
-        <button>tour</button>
+      <div class="nav-links">
+       <!-- <ul>
+        <li><a href="regolamento.html">Regolamento</a></li>
+        <li><a href="novita.html">Novità</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>-->
       </div>
 
-      <img id="logo-pic" src="image2.png" alt="logo" style="padding: 0rem;object-fit: contain; height: 90%; "/>
+      <img
+        id="logo-pic"
+        src="image2.png"
+        alt="logo"
+        style="padding: 0rem; object-fit: contain; height: 90%"
+      />
 
-      <div style="margin-right: 2vw">
-        <button class="social-btn">
-          <i class="fa-brands fa-whatsapp"></i>
-        </button>
-        <button class="social-btn">
-          <i class="fa-brands fa-facebook"></i>
-        </button>
-        <button class="social-btn"><i class="fa-brands fa-tiktok"></i></button>
-        <button class="social-btn">
-          <i class="fa-brands fa-instagram"></i>
-        </button>
+      <div class="social-btn-container">
       </div>
     </div>
 
     <!-- FINE NAVBAR -->
+
+    <div style="height: 12vh; background-color: white;">
+
+    </div>
 
     <!-- INTRO -->
     <div class="intro">
@@ -51,13 +53,9 @@
       >
         <img src="./image.png" alt="" id="castello_di_alice_logo" />
       </div>
-      <div
-        class="container-main-info"
-      >
+      <div class="container-main-info">
         <img src="./dragon_pink_pic.png" alt="" width="30%" id="dragon-pink" />
-        <p
-          class="fade-in"
-        >
+        <p class="fade-in">
           🎉 <strong style="color: #e63946">Al Castello di Alice</strong> a
           Ponte a Moriano (Lucca) potete organizzare
           <span style="color: #ff7f11; font-weight: 700">compleanni</span> e
@@ -112,8 +110,7 @@
         );
         height: 25vh;
       "
-    >
-    </div>
+    ></div>
 
     <div class="image">
       <button id="prevBtn" class="arrow-btn">
@@ -130,11 +127,18 @@
       </button>
     </div>
 
-    <div style="background-image: linear-gradient(to top,
+    <div
+      style="
+        background-image: linear-gradient(
+          to top,
           #ffffff 0%,
           /* bianco */ #fffde7 40%,
-          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */);height: 10vh;">
-    </div>
+          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */
+        );
+        height: 10vh;
+        padding-bottom: 10vh;
+      "
+    ></div>
 
     <div class="map-container">
       <iframe
@@ -146,8 +150,21 @@
     </div>
 
     <div
-      class="footer"
+      style="
+        background-image: linear-gradient(
+          to bottom,
+          #ffffff 0%,
+          /* bianco */ #fffde7 40%,
+          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */
+        );
+        height: 10vh;
+        padding-bottom: 10vh;
+      "
     ></div>
+
+    <div class="footer">
+      <p>developed by Leonardo Signore</p>
+    </div>
     <script>
       // Lista delle immagini disponibili
       const images = ["castelloIMG.png", "unnamed (2).jpg", "unnamed.jpg"];
