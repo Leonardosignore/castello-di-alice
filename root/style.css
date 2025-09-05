@@ -52,9 +52,28 @@ body {
   margin-right: 2vw;
 }
 
+.container-main-info p:hover {
+  box-shadow: 4px 4px 2px #ffd8b7;
+}
+
+.container-social-link a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-family: "Fredoka", sans-serif;
+}
+
+.container-social-link {
+  margin-right: 1rem;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
 @media (max-width: 768px) {
   .container-main-info p {
-    margin: 0px 2rem;
+    margin: 0px 1rem;
     width: 100%;
   }
   #dragon-pink {
@@ -101,24 +120,24 @@ body {
 .nav-links {
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  margin-left: 1rem;
+  width: 30%;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #333;
   font-weight: 600;
-  font-family: 'Fredoka', sans-serif;
-  transition: color 0.3s;
+  font-family: "Fredoka", sans-serif;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .container-social-link a:hover {
   color: #f77f00;
 }
 
 .navbar ul {
-  background-color: #f77f00;
   list-style: none;
   gap: 2rem;
   height: 100%;
@@ -134,10 +153,9 @@ body {
   align-items: center;
   justify-content: start;
   height: 100%;
-  border-right: 2px solid black;
 }
 
-.social-btn-container{
+.social-btn-container {
   height: 100%;
 }
 
@@ -181,30 +199,6 @@ body {
 
 #mainImage.fade-out {
   opacity: 0;
-}
-
-.social-btn {
-  width: 3vw;
-  height: 3vh;
-  border: 1px solid black;
-  border-radius: 1rem;
-  transition: transform 0.2s;
-  display: inline-block;
-  background-color: white;
-  padding: 1%;
-}
-
-/* Dimensioni diverse per schermi piccoli */
-@media (max-width: 600px) {
-  .social-btn {
-    width: 5vw;
-    height: 4vh;
-  }
-}
-
-.social-btn:hover {
-  transform: scale(1.2);
-  background-color: rgb(230, 202, 207);
 }
 
 p {
