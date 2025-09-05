@@ -9,8 +9,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#fff9c4 100%);
-  background-color: #fff9c4;
+  background-color: white;
   height: 100%;
   background-size: contain;
 }
@@ -92,7 +91,7 @@ body {
 
 .footer {
   height: 20vh;
-  background-color: linear-gradient(#fff9c4 100%);
+  background-color: #fff9c4;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,7 +109,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgb(230, 238, 237);
 }
 
 .navbar img {
