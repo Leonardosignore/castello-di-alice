@@ -9,21 +9,44 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #FFFDF5;
   height: 100%;
   background-size: contain;
 }
 
-
+#logo-pic{
+  height: 90%;
+  object-fit: contain; /* mantiene proporzioni */
+  transition: all 0.3s; /* opzionale, per un effetto smooth */
+}
 
 .container-main-info {
   width: 100%;
-  background-color: white;
+  background-color: #FFFDF5;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 10vh;
+}
+
+.mission-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.mission-container p{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: 800;
+  font-family: "Fredoka", sans-serif;
+  padding: 8rem;
+  text-align: center;
+  color: #e5991e;
+  text-shadow: 2px 2px 5px #c5c5c5;
 }
 
 .container-main-info p {
@@ -45,13 +68,6 @@ body {
   box-shadow: 4px 4px 2px #ffd8b7;
 }
 
-.container-social-link a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-family: "Fredoka", sans-serif;
-}
-
 .container-social-link {
   margin-right: 1rem;
   width: 30%;
@@ -62,12 +78,12 @@ body {
 
 #titolo {
   padding: 2rem;
-  color: rgb(235, 249, 79);
+  color: #F77F00;
   font-weight: 900;
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
-  text-shadow: 3px 3px 5px white;
+  text-shadow: 3px 5px 5px #FFF9C4;
   transition: transform 0.2s;
 }
 
@@ -95,7 +111,7 @@ body {
 
 .navbar {
   height: 12vh;
-  background-color: #fff9c4;
+  background-color: #FFF9C4;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -104,11 +120,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid rgb(230, 238, 237);
-}
-
-.navbar img {
-  height: 100%;
+  border-bottom: 2px solid black;
 }
 
 .nav-links {
@@ -120,10 +132,10 @@ body {
   width: 30%;
 }
 
-.nav-links a, #sidebar a {
+.nav-links a, #sidebar a, .container-social-link a {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(24, 209, 18);
+  color: #333;
   font-size: 20px;
   font-weight: 900;
   font-family: "Fredoka", sans-serif;
@@ -131,9 +143,9 @@ body {
 
 .nav-links a:hover,
 .container-social-link a:hover {
-  color: green;
+  color: #06D6A0;
   text-decoration: overline;
-  text-decoration-color: green;
+  text-decoration-color: #06D6A0;
 }
 
 .navbar ul {
@@ -317,12 +329,11 @@ p {
   width: 15rem;
   transition: transform 0.3s ease;
   transform: translateX(-100%);
-  background-image: linear-gradient(to top, white,#ccf15b,#c9f34c);
+  background-color: #FFF3D6;
 }
 
 #sidebar ul {
   padding: 0;
-  padding-top: 10px;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
@@ -338,7 +349,7 @@ p {
 }
 
 #sidebar li:hover{
-  background-color: #95ba25;
+  background-color: #FFD180;
 }
 
 #sidebar.active {

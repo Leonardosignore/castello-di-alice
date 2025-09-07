@@ -1,1 +1,38 @@
-rgb(235, 249, 79) colore di titolo e navlink
+Elemento
+Colore consigliato
+
+
+Navbar
+Giallo pastello (#FFF9C4)
+
+
+Testo navbar
+Grigio antracite (#333)
+
+
+Logo
+Arancione (#F77F00) o combinazione giallo/arancione
+
+
+Sfondo sezioni principali
+Bianco sporco (#FFFDF5)
+
+
+Titoli sezioni
+Arancione (#F77F00)
+
+
+Paragrafi
+Grigio antracite (#333)
+
+
+Pulsanti secondari / hover
+Verde menta (#06D6A0)
+
+
+Box info / mappe / callout
+Azzurro pastello (#81D4FA)
+
+
+Icone o badge
+Verde menta (#06D6A0)
