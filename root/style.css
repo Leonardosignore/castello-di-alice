@@ -70,13 +70,30 @@ body {
   justify-content: end;
 }
 
+#titolo {
+  padding: 2rem;
+  color: rgb(235, 249, 79);
+  font-weight: 900;
+  font-size: 9rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
+  #titolo {
+    font-size: 3rem;
+  }
+
   .container-main-info p {
     margin: 0px 1rem;
     width: 100%;
   }
   #dragon-pink {
     display: none;
+  }
+
+  .nav-links{
+    display: hidden;
   }
 }
 
@@ -132,7 +149,8 @@ body {
   font-family: "Fredoka", sans-serif;
 }
 
-.nav-links a:hover, .container-social-link a:hover {
+.nav-links a:hover,
+.container-social-link a:hover {
   color: #f77f00;
 }
 
