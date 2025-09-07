@@ -1,0 +1,1 @@
+rgb(235, 249, 79) colore di titolo e navlink

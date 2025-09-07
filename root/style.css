@@ -14,17 +14,7 @@ body {
   background-size: contain;
 }
 
-#castello_di_alice_logo {
-  min-width: 200px; /* dimensione minima leggibile */
-  height: auto; /* mantiene proporzioni */
-  max-width: 30%; /* non cresce troppo sui monitor grandi */
-  padding: 1rem;
-  transition: transform 0.2s;
-}
 
-#castello_di_alice_logo:hover {
-  transform: scale(1.2);
-}
 
 .container-main-info {
   width: 100%;
@@ -74,9 +64,15 @@ body {
   padding: 2rem;
   color: rgb(235, 249, 79);
   font-weight: 900;
-  font-size: 9rem;
+  font-size: 7rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  overflow: hidden;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px white;
+  transition: transform 0.2s;
+}
+
+#titolo:hover {
+  transform: scale(1,2);
 }
 
 .info-finali {
@@ -124,16 +120,20 @@ body {
   width: 30%;
 }
 
-.nav-links a {
+.nav-links a, #sidebar a {
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(24, 209, 18);
+  font-size: 20px;
+  font-weight: 900;
   font-family: "Fredoka", sans-serif;
 }
 
 .nav-links a:hover,
 .container-social-link a:hover {
-  color: #f77f00;
+  color: green;
+  text-decoration: overline;
+  text-decoration-color: green;
 }
 
 .navbar ul {
@@ -328,15 +328,6 @@ p {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0;
-}
-
-#sidebar a{
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 2px 2px 5px #f77f00;
-  color: rgb(1, 75, 1);
-  font-weight: 900;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sidebar li {
