@@ -9,12 +9,12 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFDF5;
+  background-color: #fffdf5;
   height: 100%;
   background-size: contain;
 }
 
-#logo-pic{
+#logo-pic {
   height: 90%;
   object-fit: contain; /* mantiene proporzioni */
   transition: all 0.3s; /* opzionale, per un effetto smooth */
@@ -22,45 +22,34 @@ body {
 
 .container-main-info {
   width: 100%;
-  background-color: #FFFDF5;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 10vh;
+  margin-top: 2rem;
 }
 
-.container-gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px;
-}
-
-.container-gallery div {
-  background-color: #F77F00;
-  height: 200px;
-}
-
-.container-gallery > div > img {
-  object-fit: contain;
-}
-
-.mission-container{
+.mission-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  background-image: url(./castelloIMG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.mission-container p{
+.mission-container p {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 800;
   font-family: "Fredoka", sans-serif;
   padding: 8rem;
-  text-align:center;
-  color: #06D6A0;
+  text-align: center;
+  color: #06d6a0;
   text-shadow: 2px 2px 1px #7e7e7e;
 }
 
@@ -73,18 +62,21 @@ body {
   line-height: 1.7;
   text-align: justify;
   color: #222;
-  background-image: linear-gradient(#fff9c4 100%);
   border-radius: 20px;
-  box-shadow: 4px 4px 5px #ffd8b7;
+  box-shadow: 4px 4px 10px gray;
   margin-right: 2vw;
+  background-image: linear-gradient(
+    135deg,
+    rgba(238, 250, 76, 0.013),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.container-main-info p:hover {
-  box-shadow: 4px 4px 2px #ffd8b7;
-}
-
-.container-social-link, .whatsapp-button {
-  margin-right: 1rem;
+.container-social-link {
+  margin: 0;
+  padding-right: 1rem;
   width: 30%;
   display: flex;
   flex-direction: row;
@@ -93,18 +85,18 @@ body {
 
 #titolo {
   padding: 2rem;
-  color: #F77F00;
+  color: #f77f00;
   font-weight: 900;
   font-size: 5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
-  text-shadow: 3px 5px 5px #FFF9C4;
+  text-shadow: 3px 5px 5px #fff9c4;
   transition: transform 0.2s;
   text-align: center;
 }
 
 #titolo:hover {
-  transform: scale(1,2);
+  transform: scale(1, 2);
 }
 
 .info-finali {
@@ -127,7 +119,7 @@ body {
 
 .navbar {
   height: 12vh;
-  background-color: #EDF594;
+  background-color: #edf594;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -142,12 +134,17 @@ body {
 .nav-links {
   height: 100%;
   display: flex;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin-left: 0;
+  margin: 0;
+  width: 30%;
+  padding-left: 1rem;
 }
 
-.nav-links a, #sidebar a, .container-social-link a {
+.nav-links a,
+#sidebar a,
+.container-social-link a {
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
@@ -158,9 +155,9 @@ body {
 
 .nav-links a:hover,
 .container-social-link a:hover {
-  color: #06D6A0;
+  color: #06d6a0;
   text-decoration: underline;
-  text-decoration-color: #06D6A0;
+  text-decoration-color: #06d6a0;
 }
 
 .navbar ul {
@@ -269,27 +266,37 @@ p {
 
 .map-container {
   position: relative;
+  display: flex;
   width: 100%; /* si adatta alla larghezza del contenitore */
   padding-bottom: 56.25%; /* rapporto 16:9 (altezza/larghezza) */
   height: 0;
   overflow: hidden;
   background-color: white;
+  border-radius: 30px;
+  
 }
 
 .map-container iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
-  border: 0;
+  margin-left: 1rem;
 }
 
-.hamburger-menu {
+.map-container p {
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+#hamburger-menu {
   display: none;
 }
 
-#hamburger-btn, .whatsapp-button {
+#hamburger-btn,
+.whatsapp-button {
   background: none;
   border: none;
   padding: 0;
@@ -305,20 +312,15 @@ p {
   width: 5rem;
 }
 
-.btn-primary i{
-  font-size: 50px;
-  color:#333;
+.btn-primary i {
+  font-size: 40px;
+  color: #333;
 }
 
-#hamburger-btn img, .whatsapp-button img{
-  display: block;
-  width: 50px;
-  height: auto;
-  background-color: #EDF594 ;
-}
-
-.whatsapp-button{
+#telephone {
   display: none;
+  color: #06d6a0;
+  text-shadow: 2px 2px 10px gray;
 }
 
 @media (max-width: 768px) {
@@ -330,6 +332,7 @@ p {
     margin: 0px 1rem;
     width: 100%;
   }
+
   #dragon-pink {
     display: none;
   }
@@ -342,17 +345,12 @@ p {
     display: none;
   }
 
-  .whatsapp-button{
-    display: flex;
+  #hamburger-menu {
+    display: block;
   }
 
-  .hamburger-menu{
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 1rem;
-    width: 30%;
+  #telephone {
+    display: block;
   }
 }
 
@@ -370,7 +368,12 @@ p {
   width: 15rem;
   transition: transform 0.3s ease;
   transform: translateX(-100%);
-  background-color: #FFF3D6;
+  /* From https://css.glass */
+  background: rgba(255, 243, 214, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 243, 214, 0.3);
 }
 
 #sidebar ul {
@@ -389,8 +392,8 @@ p {
   border-bottom: 2px solid black;
 }
 
-#sidebar li:hover{
-  background-color: #FFD180;
+#sidebar li:hover {
+  background-color: #ffd180;
 }
 
 #sidebar.active {

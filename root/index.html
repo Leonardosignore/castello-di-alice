@@ -22,23 +22,23 @@
           <li><a href="tour.html">Tour</a></li>
         </ul>
       </div>
-        <button class="btn-primary" >
-          <i class="fa-solid fa-bars"></i>
-        </button>
+      <button class="btn-primary" id="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
 
       <img id="logo-pic" src="./images/logo_castello_di_alice.png" alt="logo" />
 
       <div class="container-social-link">
         <a href="contatti.html">Contatti</a>
       </div>
-      <button class="btn-primary"><i class="fa-brands fa-whatsapp" style="color: green;"></i></button>
+      <button id="telephone" class="btn-primary">
+        <i class="fa-brands fa-whatsapp" style="color: green;"></i>
+      </button>
     </div>
 
     <!-- FINE NAVBAR -->
 
-    <div style="height: 12vh; background-color: white;">
-
-    </div>
+    <div style="height: 12vh; background-color: white"></div>
 
     <div
       style="
@@ -54,6 +54,7 @@
         height: 80vh;
         border-bottom-left-radius: 45vh;
         border-bottom-right-radius: 45vh;
+        box-shadow: 2px 2px 5px gray;
       "
     >
       <h1 id="titolo">Castello di Alice</h1>
@@ -67,93 +68,36 @@
       </ul>
     </div>
 
-    <div class="mission-container">
-      <p>
-        Dove i sogni dei bambini diventano magia!
+    <!-- INTRO -->
+    <div class="container-main-info">
+      <img src="./dragon_pink_pic.png" alt="" width="30%" id="dragon-pink" />
+      <p class="fade-in">
+        🎉 <strong style="color: #e63946">Al Castello di Alice</strong> a Ponte
+        a Moriano (Lucca) potete organizzare
+        <span style="color: #ff7f11; font-weight: 700">compleanni</span> e
+        <span style="color: #06d6a0; font-weight: 700"
+          >feste indimenticabili</span
+        >
+        per i vostri bambini!
+
+        <br /><br />
+        Il parco divertimenti mette a disposizione
+        <span style="color: #d62828; font-weight: 700">tre salette magiche</span
+        >: <span style="color: #f77f00; font-weight: 700">Castello</span>,
+        <span style="color: #118ab2; font-weight: 700">Arcobaleno</span> e
+        <span style="color: #06d6a0; font-weight: 700">Bosco Incantato</span>.
+
+        <br />
+        <br />
+        <strong>ORARIO DI APERTURA</strong>
+        <span style="text-decoration: underline">Per ingressi liberi</span>: dal
+        Martedì alla Domenica 15:30 - 19:30
+        <span style="text-decoration: underline"
+          >Per feste e compleanni in esclusiva</span
+        >: Lunedì 15:30 - 19:30, Sabato e Domenica 10:00 - 14:00, Venerdì e
+        Sabato 20:30 - 24:00
       </p>
     </div>
-
-    <!-- INTRO -->
-    <div class="intro">
-      <div class="container-main-info">
-        <img src="./dragon_pink_pic.png" alt="" width="30%" id="dragon-pink" />
-        <p class="fade-in">
-          🎉 <strong style="color: #e63946">Al Castello di Alice</strong> a
-          Ponte a Moriano (Lucca) potete organizzare
-          <span style="color: #ff7f11; font-weight: 700">compleanni</span> e
-          <span style="color: #06d6a0; font-weight: 700"
-            >feste indimenticabili</span
-          >
-          per i vostri bambini!
-
-          <br /><br />
-          Il parco divertimenti mette a disposizione
-          <span style="color: #d62828; font-weight: 700"
-            >tre salette magiche</span
-          >: <span style="color: #f77f00; font-weight: 700">Castello</span>,
-          <span style="color: #118ab2; font-weight: 700">Arcobaleno</span> e
-          <span style="color: #06d6a0; font-weight: 700">Bosco Incantato</span>.
-
-          <br /><br />
-          Le sale sono decorate a mano con i personaggi più amati, luminose e
-          dotate di tutti i comfort. Offriamo
-          <span style="color: #7209b7; font-weight: 700">menù su misura</span>,
-          servizio di apparecchiatura e inviti personalizzati.
-
-          <br /><br />
-          Per garantire il divertimento di tutti i bambini, organizziamo
-          <span style="color: #e63946; font-weight: 700"
-            >animazione professionale</span
-          >
-          con <span style="color: #f4a261; font-weight: 700">il Mago</span>,
-          <span style="color: #2a9d8f; font-weight: 700">il Truccabimbo</span>,
-          spettacoli di magia e artisti di strada! <br />
-          <br />
-          ORARIO DI APERTURA Per ingressi liberi: dal Martedì alla Domenica
-          15:30 - 19:30 Per feste e compleanni in esclusiva: Lunedì 15:30 -
-          19:30, Sabato e Domenica 10:00 - 14:00, Venerdì e Sabato 20:30 - 24:00
-        </p>
-      </div>
-    </div>
-
-    <div
-      style="
-        padding-top: 15vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        background-color: #edffcc;
-        background-image: linear-gradient(
-          to bottom,
-          #ffffff 0%,
-          /* bianco */ #fffde7 40%,
-          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */
-        );
-        height: 25vh;
-      "
-    ></div>
-
-   <div class="container-gallery">
-    <div style="background-image: url('./imm1.jpg'); background-position: center; background-repeat: no-repeat; background-size: contain; ";></div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-   </div>
-
-    <div
-      style="
-        background-image: linear-gradient(
-          to top,
-          #ffffff 0%,
-          /* bianco */ #fffde7 40%,
-          /* giallo chiarissimo */ #fff9c4 100% /* giallo canarino soft */
-        );
-        height: 10vh;
-        padding-bottom: 10vh;
-      "
-    ></div>
 
     <div class="map-container">
       <iframe
@@ -162,6 +106,11 @@
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+
+      <p>
+        Il Castello di Alice Via Nazionale, 180 - Ponte a Moriano (LU)
+        Cellulare: 3484347354 e-mail: info@ilcastellodialice.it
+      </p>
     </div>
 
     <div
@@ -191,7 +140,7 @@
       const mainImage = document.getElementById("mainImage");
       const prevBtn = document.getElementById("prevBtn");
       const nextBtn = document.getElementById("nextBtn");
-      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const hamburgerBtn = document.getElementById("hamburger-menu");
       const navlinks = document.querySelector(".nav-links");
       const sidebar = document.getElementById("sidebar");
 
