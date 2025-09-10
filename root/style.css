@@ -127,6 +127,10 @@ body {
   font-family: "Fredoka", sans-serif;
 }
 
+.nav-links a, .container-social-link a {
+  color: #BB3E04;
+}
+
 .nav-links a:hover,
 .container-social-link a:hover {
   color: #06d6a0;
