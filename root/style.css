@@ -409,6 +409,13 @@ svg {
 #sidebar.active {
   transform: translateX(0);
 }
+.footer i {
+  font-size: 28px;
+}
+
+.footer button {
+  width: 3rem;
+}
 
 @media (max-width: 768px) {
   .navbar {
