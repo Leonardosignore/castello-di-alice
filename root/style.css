@@ -45,7 +45,7 @@ body {
   box-shadow: 4px 4px 10px gray;
   margin: 0;
   padding: 50px;
-  background-color: #FFFF;
+  background-color: #ffff;
 }
 
 .container-social-link {
@@ -83,12 +83,34 @@ body {
 }
 
 .footer {
-  height: 20vh;
-  background-color: #fff9c4;
+  height: 40vh;
+  background-color: #bb3e04;
+  padding: 5px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  gap: 0px;
+}
+
+.footer a {
+  text-transform: uppercase;
+  text-align: justify;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  display: block;
+  font-weight: 700;
+  line-height: 4;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-style:solid;
+  text-underline-offset: 6px;
+}
+
+.footer i:hover {
+  transform: scale(1.5);
 }
 
 .navbar {
@@ -102,7 +124,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  border-bottom: 2px solid black;
+  border-radius: 40px;
 }
 
 .nav-links {
@@ -127,8 +149,9 @@ body {
   font-family: "Fredoka", sans-serif;
 }
 
-.nav-links a, .container-social-link a {
-  color: #BB3E04;
+.nav-links a,
+.container-social-link a {
+  color: #bb3e04;
 }
 
 .nav-links a:hover,
@@ -175,31 +198,6 @@ body {
   justify-content: center;
   padding-bottom: 15vh;
   background-image: linear-gradient(#fff9c4 100%);
-}
-
-.arrow-btn {
-  margin: 0px;
-  text-align: center;
-  background-image: linear-gradient(#fff9c4 100%);
-  border: 0px;
-  padding: 0px 2vw;
-  width: 10%;
-}
-
-.arrow-btn:hover {
-  background-color: rgb(250, 246, 246);
-}
-
-#mainImage {
-  max-height: 750px;
-  border-radius: 20px;
-  box-shadow: 3px 3px 10px gray;
-  transition: opacity 0.5s ease; /* animazione su opacità */
-  opacity: 1;
-}
-
-#mainImage.fade-out {
-  opacity: 0;
 }
 
 p {
@@ -478,6 +476,20 @@ svg {
   #telephone {
     display: block;
   }
+
+  .footer button {
+    width: 2rem;
+  }
+
+  .footer i {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 400px;
+  }
 }
-
-
